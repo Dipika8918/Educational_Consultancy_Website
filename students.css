@@ -1,0 +1,267 @@
+*{
+    margin: 0% ;
+    padding: 0%;
+    font-family: monospace;
+}
+
+body{
+    background: #242424;
+}
+
+.main-block{
+    position: static;
+    width:400px;
+    display: flexbox;
+    padding:0 0 0 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-block{
+    border:5px solid #010137 
+}
+
+.container-block{
+    background-image: linear-gradient(180deg,rgb(179, 179, 255),white);
+    color:rgb(17, 4, 53);
+}
+
+h2{
+    text-align: center;
+    padding:60% 0 60% 0;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.infoslider{
+    background-image: linear-gradient(90deg, rgb(159, 159, 255),white,rgb(159, 159, 255));
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    animation: fadeIn 5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* @keyframes infoslide{
+    0%{
+        right: -100%;
+        opacity: 0;
+    }
+    100%{
+        right: 0%;
+        opacity: 1;
+    }
+} */
+
+.container{
+    justify-content: start;
+    padding: 10% 0 0 0;
+}
+
+.left-container{
+    justify-content: start;
+    padding: 10% 0 0 0;
+}
+
+.infoslider .container .content{
+    border-radius: 200px;
+}
+
+.infoslider .card-container{
+    display: block;
+    justify-content: center ;
+    align-items: center;
+}
+
+.infoslider .card .data{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 2% 0 0 30%;
+    padding:3px;
+    align-items: center;
+    background: rgb(33, 2, 119);
+    transition: 0.5s;
+}
+
+.infoslider .card .data:hover{
+    box-shadow:0 0 30px 0 rgb(4, 5, 57);
+}
+
+.infoslider .card .data img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border:3px solid #f5f3f3;
+}
+
+.card{
+    transition: 0.5s;
+    position: relative;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    background-image: rgb(33,2,119);
+    z-index: 100px;
+    box-shadow: rgb(33,2,119);
+}
+
+.infoslider .left-card .data{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding:3px;
+    position: relative;
+    justify-content: left;
+    align-items: left;
+    background: rgb(33, 2, 119);
+    transition: 0.5s;
+}
+
+.infoslider .left-card .data:hover{
+    box-shadow:0 0 30px 0 rgb(4, 5, 57);
+}
+
+.infoslider .left-card .data img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border:3px solid #f5f3f3;
+}
+
+.left-card{
+    background-color: rgb(230, 230, 255);
+    border-radius: 20px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.left-card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    background-image: white;
+    z-index: 100px;
+    box-shadow: rgb(33,2,119);
+}
+
+.left-card:hover{
+    box-shadow: 0 0 20px 0 #010137;
+}
+
+.media{
+    text-align: center;
+    padding-right: 20px;
+}
+
+.media i{
+    color:rgb(4, 5, 57);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5 ease;
+}
+
+.media i:hover{
+    opacity: 1;
+}
+
+.name{
+    font-size: 22px;
+}
+
+.branch ,.year ,.about{
+    font-size: 16px;
+}
+
+.info{
+    padding: 20px;
+    text-align: center;
+}
+
+.name{
+    font-size: 22px;
+}
+
+.branch ,.year ,.about{
+    font-size: 16px;
+}
+
+.showcase{
+    margin-top: 20ox;
+    padding-top: 100px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.showcase a img{
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid blue;
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: dotted;
+    color: #010137;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutcontact{
+    background-color: #010137;
+    color: #f5f3f3;
+}
+
+.icons{
+    text-align: center;
+    padding-right: 10px;
+}
+
+i{
+    padding-left: 20px;
+}
+
+.icons i{
+    padding-bottom: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+h4{
+    padding: 10px;
+    color: #010137;
+}
+
+.aboutcontact h3{
+    padding-top:50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.more{
+    background-image: linear-gradient(90deg, rgb(159, 159, 255),white,rgb(159, 159, 255));
+}
